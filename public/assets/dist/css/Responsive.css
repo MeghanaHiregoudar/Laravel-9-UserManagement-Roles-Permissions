@@ -1,0 +1,69 @@
+@media only screen and (min-width: 768px) and (max-width: 983px){
+    .row_box {
+        margin-top: 19% !important;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 767px){
+    .row_box {
+        margin-top: 30% !important;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 425px){
+    .banner_text {
+        font-size: 33px;
+        font-weight: 700;
+    }
+    .fs-80 {
+        font-size: 33px;
+    }
+}
+@media only screen and (min-width: 1181px) and (max-width: 1278px){
+    .margin_card_top {
+        margin-top: 19px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1180px){
+    .margin_card_top {
+        margin-top: 75px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1111px){
+   .mahabhunaksha{
+    line-height: 0.8;
+   }
+}
+.about_line{
+    line-height: 11px;
+}
+.api_line{
+    line-height: 14px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1221px){
+    .list_child a {
+        padding: 11px 19px !important;
+        line-height: 15px;
+    }
+ }
+ @media only screen and (min-width: 768px) and (max-width: 1500px){
+    .card_body_padding {
+        padding: 0px !important;
+    }
+ }
+ @media only screen and (min-width: 1122px) and (max-width: 1210px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0px 12px;
+    }
+ }
+ @media only screen and (min-width: 1055px) and (max-width: 1121px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0px 6px;
+    }
+ }
+ @media only screen and (min-width: 992px) and (max-width: 1054px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0px 3px;
+    }
+    .navbar-brand {
+        margin-right: 1rem;
+    }
+ }
