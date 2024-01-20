@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 /**FRONTSITE ROUTES */
 use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 
 
@@ -46,6 +47,17 @@ Auth::routes();
     Route::middleware(['auth','isAdmin','PreventBackHistory'])->group(function(){
         Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');       
 
+        /*****************Roles Routes (using group routes)**********************************************/
+         Route::controller(RoleController::class)->group(function() {
+            Route::get('/roles','index')->name('roles_list');
+            Route::get('/roles/list','getRolesData')->name('roles_list_data');
+            Route::get('/roles/create','create')->name('role_create');
+            Route::post('/roles/store','store')->name('role_store');
+            Route::get('/roles/{id}/edit','edit')->name('role_edit');
+            Route::post('/roles/update','update')->name('role_update');            
+            Route::post('/roles/delete','destroy')->name('role_delete');
+            Route::get('/roles/{id}/show','show')->name('role_show');
+        }); 
 
         /*****************User Routes (using group routes)**********************************************/
         Route::controller(UserController::class)->group(function() {
